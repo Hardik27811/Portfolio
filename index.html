@@ -1,0 +1,364 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Personal Portfolio </title>
+  <link rel="stylesheet" href="style.css">
+  <!-----------for icons-->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+<body>
+  <div id="header">
+    <div class="container">
+      <nav>
+        <img src="logo.png" alt="logo">
+        <ul id="sidemenu">
+          <li><a href="#header">Home</a></li>
+          <li><a href="#about">About</a></li>
+          <li><a href="#services">Service</a></li>
+          <li><a href="#portfolio">Portfolio</a></li>
+          <li><a href="#contact">Contact</a></li>
+          <i class="fas fa-times "onclick="closemenu()"></i>
+        </ul>
+        <i class="fas fa-bars" onclick="openmenu()"></i>
+      </nav>
+      <div class="header-text">
+        <p>Web Developer</p>
+        <h1>Hi , I'm <span>H<span class="inner-span">ardik</span> <br>Sharma</br></h1>
+      </div>
+    </div>
+  </div>
+  <!------------------------about------------------------------>
+  <div id="about">
+    <div class="container">
+      <div class="row">
+        <div class="about-col-1">
+          <img src="user.png" alt="">
+        </div>
+        <div class="about-col-2">
+          <h1 class="sub-title">About Me</h1>
+          <p>I am a dedicated Computer Science student with a strong foundation in
+            software development and engineering principles. My hands-on
+            experience as a Prompt Engineer Intern has allowed me to enhance Al
+            models through effective prompt crafting and optimization. I am
+            passionate about technology and enjoy developing innovative solutions,
+            such as web applications and real-time messaging platforms, utilizing
+            varlous programming languages and frameworks:</p>
+             <div class="tab-titles">
+              <p class="tab-links active-link" onclick="opentab('skills')">Skills</p>
+              <p class="tab-links"onclick="opentab('experience')">Experience </p>
+              <p class="tab-links"onclick="opentab('education')">Education</p>
+             </div>
+             <!-- <div class="tab-contents active-tab" id="skills">
+              <ul>
+                <li><span>UI/UX</span><br>Designing Web/App interfaces</li>
+                <li><span>UI/UX</span><br>Designing Web/App interfaces</li>
+                <li><span>UI/UX</span><br>Designing Web/App interfaces</li>
+              </ul>
+             </div> -->
+             <div class="tab-contents active-tab" id="skills">
+                <ul>
+                        <li><span>Web Development</span><br>HTML, CSS, JavaScript, React.js</li>
+                        <li><span>Programming Languages</span><br>Java, C, Python</li>
+                        <li><span>Databases</span><br>SQL, MongoDB</li>
+                        <li><span>Developer Tools</span><br>VS Code, Git, GitHub</li>
+                        <li><span>UI/UX</span><br>Wireframing, Designing simple interfaces</li>
+                </ul>
+            </div>
+             <div class="tab-contents" id="experience">
+              <ul>
+                <li><span>Softage</span><br> Prompt Engineer Intern</li>
+                <!-- <li><span>UI/UX</span><br>Designing Web/App interfaces</li>
+                <li><span>UI/UX</span><br>Designing Web/App interfaces</li> -->
+              </ul>
+             </div>
+             <div class="tab-contents" id="education">
+              <ul>
+                <li><span>2025</span><br>Computer Science & Engineering (AKTU)</li>
+                <li><span>2021</span><br>Intermediate (CBSE)</li>
+                <li><span>2019</span><br>Matriculation (CBSE)</li>
+              </ul>
+             </div>
+        </div>
+
+      </div>
+    </div>
+  </div>
+
+  <!---------------------------------------Services--------------------------------->
+  <!-- <div id="services">
+    <div class="container">
+      <h1 class="sub-title">My Services</h1>
+      <div class="services-list">
+          <div>
+            <i class="fas fa-code"></i>
+            <h2>Web Design</h2>
+            <p>It looks like you're trying to manage padding from the top but are running into some issues.
+              There are a few potential areas in your CSS that might be
+              affecting the padding or layout. Let’s go through a checklist to help resolve the issue</p>
+              <a href="#">Learn more</a>
+          </div>
+          <div>
+            <i class="fas fa-tachometer-alt"></i>
+            <h2>UI/UX Design</h2>
+            <p>It looks like you're trying to manage padding from the top but are running into some issues.
+              There are a few potential areas in your CSS that might be
+              affecting the padding or layout. Let’s go through a checklist to help resolve the issue</p>
+              <a href="#">Learn more</a>
+          </div>
+          <div>
+            <i class="fas fa-mobile-alt"></i>
+            <h2>App Design</h2>
+            <p>It looks like you're trying to manage padding from the top but are running into some issues.
+              There are a few potential areas in your CSS that might be
+              affecting the padding or layout. Let’s go through a checklist to help resolve the issue</p>
+              <a href="#">Learn more</a>
+          </div>
+      </div>
+    </div>
+  </div> -->
+
+  <div id="services">
+  <div class="container">
+    <h1 class="sub-title">My Services</h1>
+    <div class="services-list">
+
+      <div>
+        <i class="fas fa-code"></i>
+        <h2>Web Development</h2>
+        <p>I build responsive and interactive websites using HTML, CSS, JavaScript, and React.js. I focus on clean code and modern design practices for a smooth user experience.</p>
+        <a href="#">Learn more</a>
+      </div>
+
+      <div>
+        <i class="fas fa-paint-brush"></i>
+        <h2>UI/UX Design</h2>
+        <p>I design simple, user-friendly interfaces and wireframes that ensure websites and apps are easy to navigate and visually appealing for all users.</p>
+        <a href="#">Learn more</a>
+      </div>
+
+      <div>
+        <i class="fas fa-server"></i>
+        <h2>Database Integration</h2>
+        <p>I can connect applications with databases like MySQL and MongoDB, ensuring smooth data flow between front-end and back-end systems.</p>
+        <a href="#">Learn more</a>
+      </div>
+
+    </div>
+  </div>
+</div>
+
+  <!------------------------------------------------------portfolio------------------------------->
+  <div>
+    <div id="portfolio">
+      <div class="container">
+        <h1 class="sub-title">My Work</h1>
+        <div class="work-list">
+          <div class="work">
+            <img src="work-1.png" >
+            <div class="layer">
+              <h3>Social Media App</h3>
+              <p>It looks like you're trying to manage padding  areas in your CSS that might be a 
+                checklist to help resolve the issue </p>
+              <a href="#"><i class="fas fa-external-link-alt"></i></a>
+            </div>
+          </div>
+          <div class="work">
+            <img src="work-2.png" >
+            <div class="layer">
+              <h3>Music App</h3>
+              <p>It looks like you're trying to manage padding  areas in your CSS that might be a 
+                checklist to help resolve the issue </p>
+              <a href="#"><i class="fas fa-external-link-alt"></i></a>
+            </div>
+          </div>
+          <div class="work">
+            <img src="work-3.png" >
+            <div class="layer">
+              <h3>Online Shopping App</h3>
+              <p>It looks like you're trying to manage padding  areas in your CSS that might be a 
+                checklist to help resolve the issue </p>
+              <a href="#"><i class="fas fa-external-link-alt"></i></a>
+            </div>
+          </div>
+        </div>
+      </div>
+      <a href="#" class="btn">See more</a>
+    </div>
+  </div>
+  <!--------------------------------contact------------------------------------->
+<div id="contact">
+  <div class="container">
+    <div class="row">
+      <div class="contact-left">
+        <h1 class="sub-title">Contact Me</h1>
+        <p><i class="fas fa-envelope"></i>sharmahardik278@.com</p>
+        <p><i class="fas fa-phone" style="transform: rotate(15deg);"></i>91-9990271939</p>
+        <div class="social-icons">
+          <a href="https://github.com/Hardik27811"><i class="fab fa-github"></i></a>
+          
+          <!-- <a href=""><i class="fab fa-twitter"></i></a>
+          <a href=""><i class="fab fa-instagram"></i></a> -->
+          <a href="https://www.linkedin.com/in/hardik-sharma-11351729b/"><i class="fab fa-linkedin"></i></a>
+          <a href=""><i class="fab fa-email"></i></a>
+
+      </div>
+      <a href="my-cv.pdf" download="" class="btn btn2">Download CV</a>
+  </div>
+<div class="contact-right">
+  <form name="submit-to-google-sheet">
+    <input type="text" name="Name" placeholder="Your Name" required>
+    <input type="email" name="Email" placeholder="Your email" required>
+    <textarea name="Message" rows="6" placeholder="Your Message"></textarea>
+    <button type="submit" class="btn btn2">Submit</button> 
+
+  </form>
+  <span id="msg"></span>
+</div>
+</div>
+  </div>
+  <div class="copyright">
+    <p>Copyright © Hardik.All rights reserved</p>
+  </div>
+
+</div>
+
+
+                               <!-- GSAP CDN -->
+<script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/gsap.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/ScrollTrigger.min.js"></script>
+
+<script>
+  // Hero text animation
+  gsap.from(".header-text h1", {
+    opacity: 0,
+    y: 50,
+    duration: 1,
+    ease: "power3.out"
+  });
+
+  gsap.from(".header-text p", {
+    opacity: 0,
+    y: 30,
+    delay: 0.5,
+    duration: 1,
+    ease: "power3.out"
+  });
+
+  // About image & text slide in
+  gsap.from(".about-col-1", {
+    scrollTrigger: {
+      trigger: ".about-col-1",
+      start: "top 80%",
+    },
+    x: -100,
+    opacity: 0,
+    duration: 1,
+  });
+
+  gsap.from(".about-col-2", {
+    scrollTrigger: {
+      trigger: ".about-col-2",
+      start: "top 80%",
+    },
+    x: 100,
+    opacity: 0,
+    duration: 1,
+  });
+
+  // Service cards pop
+  gsap.from(".services-list div", {
+    scrollTrigger: {
+      trigger: ".services-list",
+      start: "top 80%",
+    },
+    y: 50,
+    opacity: 0,
+    duration: 0.8,
+    stagger: 0.2
+  });
+
+  // Portfolio works fade + slight scale
+  gsap.from(".work", {
+    scrollTrigger: {
+      trigger: ".work-list",
+      start: "top 80%",
+    },
+    scale: 0.9,
+    opacity: 0,
+    duration: 0.8,
+    stagger: 0.2
+  });
+</script>
+
+
+  <script>
+    var tablinks = document.getElementsByClassName("tab-links");
+    var tabcontents = document.getElementsByClassName("tab-contents");
+    function opentab(tabname){
+      for(tablink of tablinks){
+        tablink.classList.remove("active-link");
+      }
+      for(tabcontent of tabcontents){
+        tabcontent.classList.remove("active-tab");
+      }
+      event.currentTarget.classList.add("active-link");
+      document.getElementById(tabname).classList.add("active-tab");
+    }
+
+  </script>
+  <script>
+    var sidemenu=document.getElementById("sidemenu");
+    function openmenu(){
+      sidemenu.style.right="0";
+    }
+    function closemenu(){
+      sidemenu.style.right="-200px";
+    }
+  </script>
+<script>
+    const scriptURL = 'https://script.google.com/macros/s/AKfycbyu4DTUiYiuBGSDiPJL2WGCL4Gpokq9X-n1XMU1CZPSzR4ezlMoESeK8C7OcGyPg8iu/exec';
+const form = document.forms['submit-to-google-sheet'];
+const msg = document.getElementById("msg");
+
+form.addEventListener('submit', e => {
+  e.preventDefault();
+  fetch(scriptURL, { method: 'POST', body: new FormData(form) })
+    .then(response => {
+      msg.innerHTML = "✅ Message sent successfully!";
+      msg.style.color = "green";
+      msg.style.fontWeight = "bold";
+      setTimeout(function () {
+        msg.innerHTML = "";
+      }, 5000);
+      form.reset();
+    })
+    .catch(error => {
+      console.error('Error!', error.message);
+      msg.innerHTML = "❌ Something went wrong.";
+      msg.style.color = "red";
+    });
+});
+
+</script>
+<script>
+  const downloadBtn = document.querySelector('.btn2'); // CV Download button
+  downloadBtn.addEventListener('click', () => {
+    alert('📄 CV download started!');
+  });
+</script>
+
+<script>
+  document.addEventListener("mousemove", (e) => {
+    const moveX = (e.clientX * 0.02);
+    const moveY = (e.clientY * 0.02);
+    document.querySelector("#header").style.backgroundPosition = `${50 + moveX}% ${50 + moveY}%`;
+  });
+</script>
+
+
+
+</body>
+</html>
